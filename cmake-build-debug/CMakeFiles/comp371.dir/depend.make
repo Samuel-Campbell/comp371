@@ -7,9 +7,14 @@ CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o: ../src/CImgAdapter/Cim
 
 CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: ../src/GLFWAdapter/GlfwAdapter.cpp
 CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: ../src/GLFWAdapter/GlfwAdapter.h
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: ../src/GLFWAdapter/Shader.h
 CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: /usr/local/include/GLFW/glfw3.h
 
+CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o: ../src/GLFWAdapter/Shader.cpp
+CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o: ../src/GLFWAdapter/Shader.h
+
 CMakeFiles/comp371.dir/src/main.cpp.o: ../src/GLFWAdapter/GlfwAdapter.h
+CMakeFiles/comp371.dir/src/main.cpp.o: ../src/GLFWAdapter/Shader.h
 CMakeFiles/comp371.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/comp371.dir/src/main.cpp.o: /usr/local/include/GLFW/glfw3.h
 

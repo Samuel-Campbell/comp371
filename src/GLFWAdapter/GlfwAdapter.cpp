@@ -17,6 +17,7 @@ GlfwAdapter::GlfwAdapter() {
  * 5) Override the framebuffer_size_callback function
  */
 bool GlfwAdapter::init() {
+    glewExperimental = GL_TRUE;
     if (!glfwInit()){
         std::cout << "Failed to initialize GLFW" << std::endl;
         return false;
@@ -58,14 +59,31 @@ bool GlfwAdapter::init() {
  *
  * Safely terminate GLFW at the end
  */
-void GlfwAdapter::run(){
+void GlfwAdapter::run(Shader* shader, float vertices[], unsigned int indices[], int verticesSize, int indicesSize){
+    unsigned int shaderProgram = shader->makeShaderProgram();
+    delete shader;
+
+    setupVertex(vertices, indices, verticesSize, indicesSize);
+
     while(!glfwWindowShouldClose(window)) {
-        processInput(window);
+        processInput();
+
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        // draw our first triangle
+        glUseProgram(shaderProgram);
+        glBindVertexArray(VAO);
+
+        glDrawElements(GL_TRIANGLES, indicesSize / sizeof(int), GL_UNSIGNED_INT, 0);
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
+    glDeleteShader(shaderProgram);
     glfwTerminate();
 }
 
@@ -87,20 +105,31 @@ void GlfwAdapter::framebuffer_size_callback(GLFWwindow *window, int width, int h
  *
  * @param window GLFWwindow object
  */
-void GlfwAdapter::processInput(GLFWwindow *window) {
+void GlfwAdapter::processInput() {
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 }
 
-void GlfwAdapter::vertexInput() {
-    float vertices[] = {
-            -0.5f, -0.5f, 0.0f,
-            0.5f, -0.5f, 0.0f,
-            0.0f,  0.5f, 0.0f
-    };
 
-    unsigned int VBO;
+void GlfwAdapter::setupVertex(float vertices[], unsigned int indices[], int verticesSize, int indicesSize){
+
+    glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+    glBindVertexArray(VAO);
+
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, verticesSize, vertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indicesSize, indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    glBindVertexArray(0);
 }

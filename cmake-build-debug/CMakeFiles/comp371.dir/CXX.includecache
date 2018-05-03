@@ -137,12 +137,26 @@ GL/glew.h
 -
 GLFW/glfw3.h
 -
+Shader.h
+/home/charmander/Git/comp371/src/GLFWAdapter/Shader.h
+
+/home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp
+GL/glew.h
+-
+iostream
+-
+Shader.h
+/home/charmander/Git/comp371/src/GLFWAdapter/Shader.h
+
+/home/charmander/Git/comp371/src/GLFWAdapter/Shader.h
 
 /home/charmander/Git/comp371/src/main.cpp
 iostream
 -
 GLFWAdapter/GlfwAdapter.h
 /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
+GLFWAdapter/Shader.h
+/home/charmander/Git/comp371/src/GLFWAdapter/Shader.h
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h
