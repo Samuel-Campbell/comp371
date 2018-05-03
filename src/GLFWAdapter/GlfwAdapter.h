@@ -1,6 +1,6 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include "Shader.h"
+#include "../Shader/Shader.h"
 
 #ifndef COMP371_GLFWADAPTER_H
 #define COMP371_GLFWADAPTER_H

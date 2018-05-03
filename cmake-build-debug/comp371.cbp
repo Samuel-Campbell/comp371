@@ -96,10 +96,10 @@
 		<Unit filename="/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h">
 			<Option target="comp371"/>
 		</Unit>
-		<Unit filename="/home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp">
+		<Unit filename="/home/charmander/Git/comp371/src/Shader/Shader.cpp">
 			<Option target="comp371"/>
 		</Unit>
-		<Unit filename="/home/charmander/Git/comp371/src/GLFWAdapter/Shader.h">
+		<Unit filename="/home/charmander/Git/comp371/src/Shader/Shader.h">
 			<Option target="comp371"/>
 		</Unit>
 		<Unit filename="/home/charmander/Git/comp371/src/main.cpp">

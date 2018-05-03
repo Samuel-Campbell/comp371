@@ -1,9 +1,3 @@
-//
-// Created by charmander on 03/05/18.
-//
-
-#include <GL/glew.h>
-#include <iostream>
 #include "Shader.h"
 
 Shader::Shader(){
@@ -11,12 +5,8 @@ Shader::Shader(){
 }
 
 void Shader::makeVertexShader() {
-    const char *vertexShaderSource = "#version 330 core\n"
-                                     "layout (location = 0) in vec3 aPos;\n"
-                                     "void main()\n"
-                                     "{\n"
-                                     "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-                                     "}\0";
+    std::string text = readFile(vertexShaderFile);
+    const char *vertexShaderSource = strdup(text.c_str());
 
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
@@ -35,12 +25,8 @@ void Shader::makeVertexShader() {
 }
 
 void Shader::makeFragmentShader() {
-    const char *fragmentShaderSource = "#version 330 core\n"
-                                       "out vec4 FragColor;\n"
-                                       "void main()\n"
-                                       "{\n"
-                                       "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-                                       "}\n\0";
+    std::string text = readFile(fragmentShaderFile);
+    const char *fragmentShaderSource = strdup(text.c_str());
 
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
@@ -71,4 +57,37 @@ unsigned int Shader::makeShaderProgram() {
     glDeleteShader(fragmentShader);
 
     return shaderProgram;
+}
+
+std::string Shader::readFile(std::string fileName) {
+    std::string path = getCurrentWorkingDir();
+    fileName = path + fileName;
+    std::string line;
+    std::string text;
+
+    std::ifstream file;
+
+    file.open(fileName);
+    if (file.is_open()) {
+        while ( getline (file,line) ) {
+            text += line + "\n";
+        }
+        file.close();
+    }
+    else {
+        std::cout << "Unable to open file" << std::endl;
+    }
+
+    return text;
+}
+
+std::string Shader::getCurrentWorkingDir() {
+    char cwd_buffer[2048];
+    char* cwd_result = getcwd(cwd_buffer, 2048);
+    std::string path;
+    for (int i = 0; cwd_result[i] != '\0'; i++){
+        path += cwd_result[i];
+    }
+    path = path.substr(0, path.find_last_of('/'));
+    return path;
 }

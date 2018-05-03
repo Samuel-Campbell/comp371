@@ -129,28 +129,28 @@ CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o.provides: CMakeFiles/co
 CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o.provides.build: CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o
 
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o: CMakeFiles/comp371.dir/flags.make
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o: ../src/GLFWAdapter/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o -c /home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o: CMakeFiles/comp371.dir/flags.make
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o: ../src/Shader/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o -c /home/charmander/Git/comp371/src/Shader/Shader.cpp
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp > CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.i
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/src/Shader/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/src/Shader/Shader.cpp > CMakeFiles/comp371.dir/src/Shader/Shader.cpp.i
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp -o CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.s
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/src/Shader/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/src/Shader/Shader.cpp -o CMakeFiles/comp371.dir/src/Shader/Shader.cpp.s
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.requires:
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.requires:
 
-.PHONY : CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.requires
+.PHONY : CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.requires
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.provides: CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.provides.build
-.PHONY : CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.provides
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.provides: CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.provides.build
+.PHONY : CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.provides
 
-CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.provides.build: CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.provides.build: CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o
 
 
 # Object files for target comp371
@@ -158,7 +158,7 @@ comp371_OBJECTS = \
 "CMakeFiles/comp371.dir/src/main.cpp.o" \
 "CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o" \
 "CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o" \
-"CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o"
+"CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o"
 
 # External object files for target comp371
 comp371_EXTERNAL_OBJECTS =
@@ -166,7 +166,7 @@ comp371_EXTERNAL_OBJECTS =
 comp371: CMakeFiles/comp371.dir/src/main.cpp.o
 comp371: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o
 comp371: CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o
-comp371: CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o
+comp371: CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o
 comp371: CMakeFiles/comp371.dir/build.make
 comp371: CMakeFiles/comp371.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable comp371"
@@ -180,7 +180,7 @@ CMakeFiles/comp371.dir/build: comp371
 CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/main.cpp.o.requires
 CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.requires
 CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o.requires
-CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o.requires
+CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o.requires
 
 .PHONY : CMakeFiles/comp371.dir/requires
 

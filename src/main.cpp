@@ -1,6 +1,6 @@
 #include <iostream>
 #include "GLFWAdapter/GlfwAdapter.h"
-#include "GLFWAdapter/Shader.h"
+#include "Shader/Shader.h"
 
 int main() {
     float vertices[] = {
