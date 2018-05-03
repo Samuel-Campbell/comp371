@@ -15,7 +15,6 @@ private:
     static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
     void processInput(GLFWwindow *window);
     void vertexInput();
-    void vertexShader();
 
     const int OPENGL_VERSION = 3;
     const int WINDOW_WIDTH = 800;

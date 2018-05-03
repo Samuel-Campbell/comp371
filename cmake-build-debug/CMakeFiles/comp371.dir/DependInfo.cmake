@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/charmander/Git/comp371/src/CImgAdapter/CimgAdapter.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o"
   "/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o"
+  "/home/charmander/Git/comp371/src/GLFWAdapter/Shader.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o"
   "/home/charmander/Git/comp371/src/main.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

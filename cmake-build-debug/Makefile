@@ -177,6 +177,33 @@ src/GLFWAdapter/GlfwAdapter.cpp.s:
 	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.s
 .PHONY : src/GLFWAdapter/GlfwAdapter.cpp.s
 
+src/GLFWAdapter/Shader.o: src/GLFWAdapter/Shader.cpp.o
+
+.PHONY : src/GLFWAdapter/Shader.o
+
+# target to build an object file
+src/GLFWAdapter/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o
+.PHONY : src/GLFWAdapter/Shader.cpp.o
+
+src/GLFWAdapter/Shader.i: src/GLFWAdapter/Shader.cpp.i
+
+.PHONY : src/GLFWAdapter/Shader.i
+
+# target to preprocess a source file
+src/GLFWAdapter/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.i
+.PHONY : src/GLFWAdapter/Shader.cpp.i
+
+src/GLFWAdapter/Shader.s: src/GLFWAdapter/Shader.cpp.s
+
+.PHONY : src/GLFWAdapter/Shader.s
+
+# target to generate assembly for a file
+src/GLFWAdapter/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.s
+.PHONY : src/GLFWAdapter/Shader.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -219,6 +246,9 @@ help:
 	@echo "... src/GLFWAdapter/GlfwAdapter.o"
 	@echo "... src/GLFWAdapter/GlfwAdapter.i"
 	@echo "... src/GLFWAdapter/GlfwAdapter.s"
+	@echo "... src/GLFWAdapter/Shader.o"
+	@echo "... src/GLFWAdapter/Shader.i"
+	@echo "... src/GLFWAdapter/Shader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

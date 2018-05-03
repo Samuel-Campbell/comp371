@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/comp371.dir/src/main.cpp.o"
   "CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o"
   "CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o"
+  "CMakeFiles/comp371.dir/src/GLFWAdapter/Shader.cpp.o"
   "comp371.pdb"
   "comp371"
 )
