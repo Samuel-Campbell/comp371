@@ -1,9 +1,10 @@
 #include <iostream>
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
+#include "GLFWAdapter/GlfwAdapter.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    glfwInit();
+    auto* glfwadapter = new GlfwAdapter();
+    if (glfwadapter->init()){
+        glfwadapter->run();
+    }
     return 0;
 }

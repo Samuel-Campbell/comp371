@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o"
   "/home/charmander/Git/comp371/main.cpp" "/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles/comp371.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

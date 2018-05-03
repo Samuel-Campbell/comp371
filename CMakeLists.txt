@@ -9,7 +9,7 @@ include_directories(${GLFW_INCLUDE_DIRS})
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(comp371 main.cpp)
+add_executable(comp371 main.cpp GLFWAdapter/GlfwAdapter.cpp GLFWAdapter/GlfwAdapter.h)
 
 target_link_libraries(comp371
         ${GLFW_LIBRARIES}

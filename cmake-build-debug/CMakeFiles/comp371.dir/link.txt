@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/comp371.dir/main.cpp.o  -o comp371 -lglfw3 -lGLEW -lglfw3 -lGL -lX11 -lXi -lXrandr -lXxf86vm -lXinerama -lXcursor -lrt -lm -pthread -ldl 
+/usr/bin/c++  -g   CMakeFiles/comp371.dir/main.cpp.o CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o  -o comp371 -lglfw3 -lGLEW -lglfw3 -lGL -lX11 -lXi -lXrandr -lXxf86vm -lXinerama -lXcursor -lrt -lm -pthread -ldl 
