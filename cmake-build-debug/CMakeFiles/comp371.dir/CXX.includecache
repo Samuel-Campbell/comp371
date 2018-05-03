@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp
+/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp
 iostream
 -
 GlfwAdapter.h
-/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.h
+/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
 
-/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.h
+/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
 GL/glew.h
 -
 GLFW/glfw3.h
 -
 
-/home/charmander/Git/comp371/main.cpp
+/home/charmander/Git/comp371/src/main.cpp
 iostream
 -
 GLFWAdapter/GlfwAdapter.h
-/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.h
+/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h

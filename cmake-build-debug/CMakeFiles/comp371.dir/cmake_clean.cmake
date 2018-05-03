@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/comp371.dir/main.cpp.o"
-  "CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o"
+  "CMakeFiles/comp371.dir/src/main.cpp.o"
+  "CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o"
   "comp371.pdb"
   "comp371"
 )

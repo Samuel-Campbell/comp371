@@ -57,64 +57,64 @@ include CMakeFiles/comp371.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/comp371.dir/flags.make
 
-CMakeFiles/comp371.dir/main.cpp.o: CMakeFiles/comp371.dir/flags.make
-CMakeFiles/comp371.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/comp371.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/main.cpp.o -c /home/charmander/Git/comp371/main.cpp
+CMakeFiles/comp371.dir/src/main.cpp.o: CMakeFiles/comp371.dir/flags.make
+CMakeFiles/comp371.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/comp371.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/src/main.cpp.o -c /home/charmander/Git/comp371/src/main.cpp
 
-CMakeFiles/comp371.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/main.cpp > CMakeFiles/comp371.dir/main.cpp.i
+CMakeFiles/comp371.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/src/main.cpp > CMakeFiles/comp371.dir/src/main.cpp.i
 
-CMakeFiles/comp371.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/main.cpp -o CMakeFiles/comp371.dir/main.cpp.s
+CMakeFiles/comp371.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/src/main.cpp -o CMakeFiles/comp371.dir/src/main.cpp.s
 
-CMakeFiles/comp371.dir/main.cpp.o.requires:
+CMakeFiles/comp371.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/comp371.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/comp371.dir/src/main.cpp.o.requires
 
-CMakeFiles/comp371.dir/main.cpp.o.provides: CMakeFiles/comp371.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/comp371.dir/main.cpp.o.provides
+CMakeFiles/comp371.dir/src/main.cpp.o.provides: CMakeFiles/comp371.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/comp371.dir/src/main.cpp.o.provides
 
-CMakeFiles/comp371.dir/main.cpp.o.provides.build: CMakeFiles/comp371.dir/main.cpp.o
+CMakeFiles/comp371.dir/src/main.cpp.o.provides.build: CMakeFiles/comp371.dir/src/main.cpp.o
 
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o: CMakeFiles/comp371.dir/flags.make
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o: ../GLFWAdapter/GlfwAdapter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o -c /home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: CMakeFiles/comp371.dir/flags.make
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o: ../src/GLFWAdapter/GlfwAdapter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o -c /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp > CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.i
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp > CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.i
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp -o CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.s
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp -o CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.s
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.requires:
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.requires:
 
-.PHONY : CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.requires
+.PHONY : CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.requires
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.provides: CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.provides.build
-.PHONY : CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.provides
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.provides: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.provides.build
+.PHONY : CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.provides
 
-CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.provides.build: CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o
+CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.provides.build: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o
 
 
 # Object files for target comp371
 comp371_OBJECTS = \
-"CMakeFiles/comp371.dir/main.cpp.o" \
-"CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o"
+"CMakeFiles/comp371.dir/src/main.cpp.o" \
+"CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o"
 
 # External object files for target comp371
 comp371_EXTERNAL_OBJECTS =
 
-comp371: CMakeFiles/comp371.dir/main.cpp.o
-comp371: CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o
+comp371: CMakeFiles/comp371.dir/src/main.cpp.o
+comp371: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o
 comp371: CMakeFiles/comp371.dir/build.make
 comp371: CMakeFiles/comp371.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/charmander/Git/comp371/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable comp371"
@@ -125,8 +125,8 @@ CMakeFiles/comp371.dir/build: comp371
 
 .PHONY : CMakeFiles/comp371.dir/build
 
-CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/main.cpp.o.requires
-CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o.requires
+CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/main.cpp.o.requires
+CMakeFiles/comp371.dir/requires: CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o.requires
 
 .PHONY : CMakeFiles/comp371.dir/requires
 

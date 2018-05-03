@@ -84,13 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.cpp">
+		<Unit filename="/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp">
 			<Option target="comp371"/>
 		</Unit>
-		<Unit filename="/home/charmander/Git/comp371/GLFWAdapter/GlfwAdapter.h">
+		<Unit filename="/home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h">
 			<Option target="comp371"/>
 		</Unit>
-		<Unit filename="/home/charmander/Git/comp371/main.cpp">
+		<Unit filename="/home/charmander/Git/comp371/src/main.cpp">
 			<Option target="comp371"/>
 		</Unit>
 		<Unit filename="/home/charmander/Git/comp371/CMakeLists.txt">

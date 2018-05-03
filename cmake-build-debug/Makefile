@@ -123,59 +123,59 @@ comp371/fast:
 	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/build
 .PHONY : comp371/fast
 
-GLFWAdapter/GlfwAdapter.o: GLFWAdapter/GlfwAdapter.cpp.o
+src/GLFWAdapter/GlfwAdapter.o: src/GLFWAdapter/GlfwAdapter.cpp.o
 
-.PHONY : GLFWAdapter/GlfwAdapter.o
-
-# target to build an object file
-GLFWAdapter/GlfwAdapter.cpp.o:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.o
-.PHONY : GLFWAdapter/GlfwAdapter.cpp.o
-
-GLFWAdapter/GlfwAdapter.i: GLFWAdapter/GlfwAdapter.cpp.i
-
-.PHONY : GLFWAdapter/GlfwAdapter.i
-
-# target to preprocess a source file
-GLFWAdapter/GlfwAdapter.cpp.i:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.i
-.PHONY : GLFWAdapter/GlfwAdapter.cpp.i
-
-GLFWAdapter/GlfwAdapter.s: GLFWAdapter/GlfwAdapter.cpp.s
-
-.PHONY : GLFWAdapter/GlfwAdapter.s
-
-# target to generate assembly for a file
-GLFWAdapter/GlfwAdapter.cpp.s:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/GLFWAdapter/GlfwAdapter.cpp.s
-.PHONY : GLFWAdapter/GlfwAdapter.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/GLFWAdapter/GlfwAdapter.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/GLFWAdapter/GlfwAdapter.cpp.o:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o
+.PHONY : src/GLFWAdapter/GlfwAdapter.cpp.o
 
-main.i: main.cpp.i
+src/GLFWAdapter/GlfwAdapter.i: src/GLFWAdapter/GlfwAdapter.cpp.i
 
-.PHONY : main.i
+.PHONY : src/GLFWAdapter/GlfwAdapter.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/GLFWAdapter/GlfwAdapter.cpp.i:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.i
+.PHONY : src/GLFWAdapter/GlfwAdapter.cpp.i
 
-main.s: main.cpp.s
+src/GLFWAdapter/GlfwAdapter.s: src/GLFWAdapter/GlfwAdapter.cpp.s
 
-.PHONY : main.s
+.PHONY : src/GLFWAdapter/GlfwAdapter.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/GLFWAdapter/GlfwAdapter.cpp.s:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.s
+.PHONY : src/GLFWAdapter/GlfwAdapter.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... comp371"
-	@echo "... GLFWAdapter/GlfwAdapter.o"
-	@echo "... GLFWAdapter/GlfwAdapter.i"
-	@echo "... GLFWAdapter/GlfwAdapter.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/GLFWAdapter/GlfwAdapter.o"
+	@echo "... src/GLFWAdapter/GlfwAdapter.i"
+	@echo "... src/GLFWAdapter/GlfwAdapter.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
