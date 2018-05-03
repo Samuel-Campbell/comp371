@@ -5,7 +5,6 @@
  * Default Constructor
  */
 GlfwAdapter::GlfwAdapter() {
-
 }
 
 /**
@@ -38,6 +37,13 @@ bool GlfwAdapter::init() {
     glfwMakeContextCurrent(window);
     glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    GLenum err = glewInit();
+    if (GLEW_OK != err)
+    {
+        fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
+    }
+    fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
     return true;
 }
 
@@ -53,7 +59,6 @@ bool GlfwAdapter::init() {
  * Safely terminate GLFW at the end
  */
 void GlfwAdapter::run(){
-    //vertexShader();
     while(!glfwWindowShouldClose(window)) {
         processInput(window);
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -101,14 +106,12 @@ void GlfwAdapter::vertexInput() {
 }
 
 void GlfwAdapter::vertexShader() {
-    const char* vertexShaderSource = "\n"
-                                     "#version 330 core\n"
+    const char *vertexShaderSource = "#version 330 core\n"
                                      "layout (location = 0) in vec3 aPos;\n"
-                                     "\n"
                                      "void main()\n"
                                      "{\n"
-                                     "    gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-                                     "}";
+                                     "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+                                     "}\0";
     unsigned int vertexShader;
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
@@ -120,5 +123,8 @@ void GlfwAdapter::vertexShader() {
     if(!success){
         glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+    else{
+        std::cout << "Shader successfully compiled" << std::endl;
     }
 }
