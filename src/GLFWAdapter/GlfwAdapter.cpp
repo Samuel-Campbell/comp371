@@ -1,7 +1,3 @@
-//
-// Created by charmander on 03/05/18.
-//
-
 #include <iostream>
 #include "GlfwAdapter.h"
 

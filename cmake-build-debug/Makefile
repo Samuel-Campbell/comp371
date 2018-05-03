@@ -123,6 +123,33 @@ comp371/fast:
 	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/build
 .PHONY : comp371/fast
 
+src/CImgAdapter/CimgAdapter.o: src/CImgAdapter/CimgAdapter.cpp.o
+
+.PHONY : src/CImgAdapter/CimgAdapter.o
+
+# target to build an object file
+src/CImgAdapter/CimgAdapter.cpp.o:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o
+.PHONY : src/CImgAdapter/CimgAdapter.cpp.o
+
+src/CImgAdapter/CimgAdapter.i: src/CImgAdapter/CimgAdapter.cpp.i
+
+.PHONY : src/CImgAdapter/CimgAdapter.i
+
+# target to preprocess a source file
+src/CImgAdapter/CimgAdapter.cpp.i:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.i
+.PHONY : src/CImgAdapter/CimgAdapter.cpp.i
+
+src/CImgAdapter/CimgAdapter.s: src/CImgAdapter/CimgAdapter.cpp.s
+
+.PHONY : src/CImgAdapter/CimgAdapter.s
+
+# target to generate assembly for a file
+src/CImgAdapter/CimgAdapter.cpp.s:
+	$(MAKE) -f CMakeFiles/comp371.dir/build.make CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.s
+.PHONY : src/CImgAdapter/CimgAdapter.cpp.s
+
 src/GLFWAdapter/GlfwAdapter.o: src/GLFWAdapter/GlfwAdapter.cpp.o
 
 .PHONY : src/GLFWAdapter/GlfwAdapter.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... comp371"
+	@echo "... src/CImgAdapter/CimgAdapter.o"
+	@echo "... src/CImgAdapter/CimgAdapter.i"
+	@echo "... src/CImgAdapter/CimgAdapter.s"
 	@echo "... src/GLFWAdapter/GlfwAdapter.o"
 	@echo "... src/GLFWAdapter/GlfwAdapter.i"
 	@echo "... src/GLFWAdapter/GlfwAdapter.s"
