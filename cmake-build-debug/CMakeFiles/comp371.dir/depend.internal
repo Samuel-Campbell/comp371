@@ -8,8 +8,13 @@ CMakeFiles/comp371.dir/src/CImgAdapter/CimgAdapter.cpp.o
 CMakeFiles/comp371.dir/src/GLFWAdapter/GlfwAdapter.cpp.o
  /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.cpp
  /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
+ /home/charmander/Git/comp371/src/Shader/Shader.h
  /usr/local/include/GLFW/glfw3.h
+CMakeFiles/comp371.dir/src/Shader/Shader.cpp.o
+ /home/charmander/Git/comp371/src/Shader/Shader.cpp
+ /home/charmander/Git/comp371/src/Shader/Shader.h
 CMakeFiles/comp371.dir/src/main.cpp.o
  /home/charmander/Git/comp371/src/GLFWAdapter/GlfwAdapter.h
+ /home/charmander/Git/comp371/src/Shader/Shader.h
  /home/charmander/Git/comp371/src/main.cpp
  /usr/local/include/GLFW/glfw3.h
