@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string.h>
 #include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <tgmath.h>
 #include <zconf.h>
 
 #ifndef COMP371_SHADER_H
@@ -12,6 +14,7 @@ class Shader {
 public:
     Shader();
     unsigned int makeShaderProgram();
+    void updateColor();
 
 private:
     unsigned int vertexShader;

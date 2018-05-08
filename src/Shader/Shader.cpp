@@ -20,7 +20,7 @@ void Shader::makeVertexShader() {
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
     else{
-        std::cout << "Shader successfully compiled" << std::endl;
+        std::cout << "Vertex shader successfully compiled" << std::endl;
     }
 }
 
@@ -31,6 +31,17 @@ void Shader::makeFragmentShader() {
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShader);
+
+    int  success;
+    char infoLog[512];
+    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+    if(!success){
+        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+    else{
+        std::cout << "Fragment shader successfully compiled" << std::endl;
+    }
 }
 
 unsigned int Shader::makeShaderProgram() {
@@ -90,4 +101,12 @@ std::string Shader::getCurrentWorkingDir() {
     }
     path = path.substr(0, path.find_last_of('/'));
     return path;
+}
+
+void Shader::updateColor(){
+    double timeValue = glfwGetTime();
+    auto greenValue = float((sin(timeValue) / 2.0f) + 0.5f);
+    int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+    glUseProgram(shaderProgram);
+    glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 }

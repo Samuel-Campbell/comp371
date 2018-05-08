@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/charmander/Git/comp371/src/CImgAdapter/CimgAdapter.cpp">
-			<Option target="comp371"/>
-		</Unit>
 		<Unit filename="/home/charmander/Git/comp371/src/CImgAdapter/CimgAdapter.h">
 			<Option target="comp371"/>
 		</Unit>

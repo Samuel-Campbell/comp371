@@ -85,7 +85,6 @@ void GlfwAdapter::run(Shader* shader, float vertices[], unsigned int indices[], 
 
     // ----- 1 -----
     unsigned int shaderProgram = shader->makeShaderProgram();
-    delete shader;
 
     // ----- 2 -----
     setupVertex(vertices, indices, verticesSize, indicesSize);
@@ -97,12 +96,16 @@ void GlfwAdapter::run(Shader* shader, float vertices[], unsigned int indices[], 
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // draw our first triangle
         glUseProgram(shaderProgram);
+
+        // update uniform color
+        shader->updateColor();
+
+        // Render triangle
         glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
 
-        glDrawElements(GL_TRIANGLES, indicesSize / sizeof(int), GL_UNSIGNED_INT, 0);
-
+        // swap buffers and poll IO events
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
@@ -112,6 +115,7 @@ void GlfwAdapter::run(Shader* shader, float vertices[], unsigned int indices[], 
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
     glDeleteShader(shaderProgram);
+    delete shader;
     glfwTerminate();
 }
 
@@ -169,8 +173,13 @@ void GlfwAdapter::setupVertex(float vertices[], unsigned int indices[], int vert
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indicesSize, indices, GL_STATIC_DRAW);
 
     // ----- 3 -----
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    // Position attribute
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+
+    // color attribute
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3* sizeof(float)));
+    glEnableVertexAttribArray(1);
 
     // ----- 4 -----
     glBindBuffer(GL_ARRAY_BUFFER, 0);

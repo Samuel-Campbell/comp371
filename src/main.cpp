@@ -3,11 +3,11 @@
 #include "Shader/Shader.h"
 
 int main() {
+
     float vertices[] = {
-            0.5f,  0.5f, 0.0f,  // top right
-            0.5f, -0.5f, 0.0f,  // bottom right
-            -0.5f, -0.5f, 0.0f,  // bottom left
-            -0.5f,  0.5f, 0.0f   // top left
+            0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
+            -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
+            0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f
     };
 
     unsigned int indices[] = {
@@ -21,9 +21,6 @@ int main() {
     if (glfwadapter->init()){
         glfwadapter->run(shader, vertices, indices, sizeof(vertices), sizeof(indices));
     }
-
-    delete shader;
-    delete glfwadapter;
 
     return 0;
 }
